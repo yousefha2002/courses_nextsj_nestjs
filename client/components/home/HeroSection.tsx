@@ -3,7 +3,7 @@ import Container from "../ui/Container";
 import Image from "next/image";
 
 export default function Hero() {
-  return (
+return (
     <section className="bg-bg-light text-text-dark py-24">
         <Container className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
             {/* Text */}
