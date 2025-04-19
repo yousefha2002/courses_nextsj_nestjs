@@ -43,6 +43,7 @@
 id	int	Primary Key
 name	string	اسم المستخدم
 email	string	فريد
+image string 
 password	string	مشفّر
 role	enum (student, instructor, admin)	نوع المستخدم
 
@@ -70,6 +71,7 @@ courseId	FK → Course(id)	الكورس الذي يتبع له الجلسة
 date	datetime	موعد الجلسة
 duration	int (بالدقائق)	مدة الجلسة
 link	string	رابط الجلسة (مثل Zoom)
+recordingUrl: string | null
 
 5. Booking (الحجوزات)
 الحقل	النوع	التفاصيل
